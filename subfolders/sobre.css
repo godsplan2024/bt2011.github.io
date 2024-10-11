@@ -1,0 +1,187 @@
+@import "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Promoção no topo */
+.header-top {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-top .promo-bar {
+    color: white;
+    font-size: 14px;
+}
+
+/* Main Header */
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Navigation Menu */
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu ul li {
+    margin-left: 20px;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-menu ul li a:hover {
+    color: gray;
+}
+
+/* Search and Icons */
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    margin-right: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transition: width 0.5s ease;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background: transparent;
+    background-color: white;
+}
+
+.search-box input::placeholder {
+    color: #666;
+}
+
+.search-box .icon {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: black;
+}
+
+#searchIcon svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    cursor: pointer;
+}
+
+.search-container:hover .search-box {
+    width: 200px;
+}
+
+.icon-link {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-link svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    cursor: pointer;
+}
+
+.icon-link:hover svg {
+    fill: gray;
+}
+
+/* Restante do CSS é o mesmo */
+
+/* Restante do CSS é o mesmo */
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+
+.about-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.about-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #555;
+}
+

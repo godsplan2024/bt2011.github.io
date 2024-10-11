@@ -1,0 +1,251 @@
+@import "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Promoção no topo */
+.header-top {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-top .promo-bar {
+    color: white;
+    font-size: 14px;
+}
+
+/* Main Header */
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Navigation Menu */
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu ul li {
+    margin-left: 20px;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-menu ul li a:hover {
+    color: gray;
+}
+
+/* Search and Icons */
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    margin-right: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transition: width 0.5s ease;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background: transparent;
+    background-color: white;
+}
+
+.search-box input::placeholder {
+    color: #666;
+}
+
+.search-box .icon {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: black;
+}
+
+#searchIcon svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    cursor: pointer;
+}
+
+.search-container:hover .search-box {
+    width: 200px;
+}
+
+.icon-link {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-link svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    cursor: pointer;
+}
+
+.icon-link:hover svg {
+    fill: gray;
+}
+
+/* Restante do CSS é o mesmo */
+
+/* Restante do CSS é o mesmo */
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Carousel */
+
+/* Ajuste para que o carrossel fique abaixo do header */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0px auto 0 auto; /* margem para evitar sobreposição */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Ajuste para posicionar imagem à esquerda e texto+botão à direita */
+.carousel-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Imagem à esquerda, texto e botão à direita */
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    background-color: black;
+}
+
+.carousel-slide img {
+    width: 50%; /* Ocupa 50% do slide */
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-content {
+    width: 40%; /* Ocupa 40% do slide */
+    padding: 20px;
+    text-align: left;
+    color: white;
+}
+
+.carousel-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-black:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev:hover, .next:hover {
+    background-color: black;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.active {
+    display: block;
+}

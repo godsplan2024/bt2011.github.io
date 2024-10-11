@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Camiseta Preta Básica</title>
+    <link rel="stylesheet" href="/roupas/camiseta.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <span class="promo-bar">Frete grátis nas compras acima de R$ 200!</span>
+        </div>
+        <div class="header-main">
+            <h1 class="logo">btw2011</h1>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/index.html">Ínicio</a></li>
+                    <li><a href="/subfolders/roupas.html">Roupas</a></li>
+                    <li><a href="/subfolders/sobre.html">O que é btw2011 e qual é o objetivo?</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons">
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" placeholder="Pesquisar..." id="searchInput">
+                        <div class="icon" id="searchIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="white">
+                                <path d="M10 2a8 8 0 105.293 14.707l4 4a1 1 0 001.414-1.414l-4-4A8 8 0 0010 2zm0 2a6 6 0 110 12A6 6 0 0110 4z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="icon-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="white">
+                        <path d="M12 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0 2c2.67 0 8 1.34 8 4v2H4v-2c0-2.66 5.33-4 8-4z"/>
+                    </svg>
+                </a>
+                <a href="#" class="icon-link cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                        <path d="M7 4h15l-1.68 8.41A4 4 0 0116.36 16H8.64a4 4 0 01-3.96-3.59L3 4h4zm0 0l-1-2H3V2h4l1 2zM7 4h10v2H7V4zm10 10H8a2 2 0 002 2h5a2 2 0 002-2z"/>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-page">
+            <div class="product-image">
+                <img src="/img/btw20111.jpg" alt="Camiseta Preta Básica">
+            </div>
+
+            <div class="product-details">
+                <h2>Camiseta Preta Básica</h2>
+                <p class="price">R$ 49,99</p>
+                <p class="description">
+                    Camiseta preta básica, confortável e perfeita para qualquer ocasião. Feita com algodão 100% de alta qualidade, com corte que valoriza todos os tipos de corpo.
+                </p>
+
+                <form id="buy-form" action="compra-sucesso.html" method="POST">
+                    <label for="size">Tamanho:</label>
+                    <select name="size" id="size" required>
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                    </select>
+
+                    <button type="submit" class="btn-buy" id="buy-button">Comprar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 borntowin2011. Todos os direitos reservados.</p>
+    </footer>
+    <script src="camiseta.js"></script>
+</body>
+</html>
